@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import Map from '../components/Map.js'
+import Map from './Map.js'
 
 const Footer = () => (
   <footer className={styles.footer}>
     <Map />
-    
+
     <div>
       <Image className={styles.footer_img} src="/footer.jpg" width={500} height={300} objectFit="cover" />
     </div>

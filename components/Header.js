@@ -26,8 +26,13 @@ const Header = () => (
         <Link href="/">
           <a>Home</a>
         </Link>
+        /
         <Link href="/other">
           <a>other</a>
+        </Link>
+        /
+        <Link href="/form">
+          <a>form</a>
         </Link>
       </div>
     </div>
