@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 import Map from './Map.js'
 
 const Footer = () => (
@@ -8,7 +8,7 @@ const Footer = () => (
     <Map />
 
     <div>
-      <Image className={styles.footer_img} src="/footer.jpg" width={500} height={300} objectFit="cover" />
+      <Image className={styles.footer_img} src="/footer.jpg" alt="temari image" width={500} height={300} objectFit="cover" />
     </div>
     <div>
       <a
