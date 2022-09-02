@@ -24,14 +24,6 @@ const Home: NextPage = () => {
           </h2>
         </div>
 
-        <Link href="/other">
-          <a>other</a>
-        </Link>
-
-        <Link href="/form">
-          <a>form</a>
-        </Link>
-
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
