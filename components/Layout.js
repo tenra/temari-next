@@ -11,6 +11,7 @@ function Layout({ children }) {
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <meta name="google-site-verification" content="Q6UYAJ7gGkvWNdeXXECi6Pebh0fAeMlM8EiFB5-N2N0" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
             </Head>
 
             <Header />
