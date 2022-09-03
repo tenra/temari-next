@@ -5,9 +5,7 @@ import Map from './Map.js'
 
 const Footer = () => (
   <footer className={styles.footer}>
-    <Map />
-
-    <div>
+    <div style={{margin: '2rem', padding: "1.5rem"}}>
       <Image className={styles.footer_img} src="/footer.jpg" alt="temari image" width={500} height={300} objectFit="cover" />
     </div>
     <div>
@@ -22,6 +20,8 @@ const Footer = () => (
         </span>
       </a>
     </div>
+
+    <Map />
   </footer>
 );
 

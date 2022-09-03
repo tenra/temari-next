@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 import Layout from '../components/Layout'
+import Slider from '../components/Slider.js'
 
 const Home: NextPage = () => {
   return (
@@ -11,18 +12,7 @@ const Home: NextPage = () => {
           Welcome to <a href="https://nextjs.org">Temari with Next.js!</a>
         </h1>
 
-        <div className={styles.top_image}>
-          <Image src="/top.jpg"
-                  alt="temari"
-                  layout="fill"
-                  objectFit="cover"
-          />
-          <h2 className={styles.top_image_message}>
-            住み慣れた我が家を一歩出て<br />
-            デイサービスセンターてまりで<br />
-            一日過ごされませんか
-          </h2>
-        </div>
+        <Slider />
 
         <p className={styles.description}>
           Get started by editing{' '}

@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import Layout from '../components/Layout'
-import { NextSeo } from "next-seo";
+import { NextSeo } from "next-seo"
 
 const Home: NextPage = () => {
   return (
