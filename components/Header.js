@@ -47,6 +47,11 @@ export default function Header() {
                   <a>form</a>
                 </Link>
               </li>
+              <li>
+                <Link href="/blogs">
+                  <a>記事</a>
+                </Link>
+              </li>
             </ul>
           </nav>
         </div>
@@ -81,6 +86,13 @@ export default function Header() {
             <Link href="/form">
             <a>
               <p className={styles.mainTitle}>form</p>
+            </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/blogs">
+            <a>
+              <p className={styles.mainTitle}>記事</p>
             </a>
             </Link>
           </li>

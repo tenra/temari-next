@@ -3,7 +3,7 @@ import { NextSeo } from "next-seo";
 import '../styles/globals.scss'
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import { GA_TRACKING_ID, pageview } from '../lib/gtag';
+import { GA_TRACKING_ID, pageview } from '../libs/gtag';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();

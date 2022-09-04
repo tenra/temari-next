@@ -1,11 +1,32 @@
-import type { NextPage } from 'next'
+import type { InferGetStaticPropsType, NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 import Layout from '../components/Layout'
 import Slider from '../components/Slider.js'
+import { client } from "../libs/client";
+import type { Blog } from "../types/blog"
 
-const Home: NextPage = () => {
+export const getStaticProps = async () => {
+  const blog = await client.get({ endpoint: "blogs" });
+
+  return {
+    props: {
+      blogs: blog.contents,
+    },
+  };
+};
+
+type Props = {
+  blogs: Blog[];
+};
+
+
+const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  blogs,
+}: Props) => {
+  console.log(blogs);
+
   return (
     <Layout>
         <h1 className={styles.title}>
@@ -18,6 +39,25 @@ const Home: NextPage = () => {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx////////</code>
         </p>
+
+        <div>
+          <ul>
+            {blogs.map((blog) => (
+              <li key={blog.id} style={{listStyle: "none"}}>
+                <Link href={`/blogs/${blog.id}`}>
+                  <a>
+                    <div style={{display: "flex"}}>
+                      <div>
+                        <p>{blog.publishedAt}</p>
+                        <h2>{blog.title}</h2>
+                      </div>
+                    </div>
+                  </a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>

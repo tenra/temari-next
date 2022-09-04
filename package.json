@@ -13,6 +13,7 @@
     "@formspree/react": "^2.3.3",
     "axios": "^0.27.2",
     "google-maps-react": "^2.0.6",
+    "microcms-js-sdk": "^2.2.1",
     "next": "12.2.2",
     "next-seo": "^5.5.0",
     "react": "18.2.0",

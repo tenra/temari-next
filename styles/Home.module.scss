@@ -4,7 +4,7 @@
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 55vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -95,6 +95,12 @@
 
 .footer_img {
   border-radius: 10px;
+}
+
+.blog_wrapper {
+  img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 640px) {
