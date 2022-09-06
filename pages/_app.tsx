@@ -26,19 +26,17 @@ function MyApp({ Component, pageProps }: AppProps) {
         title="デイサービスセンターてまり"
         description="兵庫県美方郡香美町の居宅介護支援事業所「デイサービスセンターてまり」です。"
         openGraph={{
-          url: "blogConfig.url",
-          title: "blogConfig.title",
-          description: "blogConfig.desc",
-          images: [
-            {
-              url: "blogConfig.ogp.images[0].url",
-              width: 800,
-              height: 600,
-              alt: "Og Image Alt",
-              type: "image/png",
-            },
-          ],
-          site_name: "blogConfig.title",
+          url: "/top.jpg",
+          title: "デイサービスセンターてまり",
+          description: "兵庫県美方郡香美町の居宅介護支援事業所「デイサービスセンターてまり」です。",
+          images: [{
+            url: "/top.jpg",
+            width: 800,
+            height: 600,
+            alt: "Og Image Alt",
+            type: "image/png",
+          },],
+          site_name: "デイサービスセンターてまり",
         }}
         twitter={{
           handle: "blogConfig.sns.twitter.account",

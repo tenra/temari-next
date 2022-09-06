@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from '../styles/Home.module.scss'
 import Header from './Header.js'
 import Footer from './Footer.js'
+import ReturnTopButton from './ReturnTopButton.tsx'
 
 export const appName = "Temari Next"
 
@@ -19,6 +20,7 @@ function Layout({ children }) {
                 { children }
             </main>
             <Footer />
+            <ReturnTopButton />
         </div>
     );
 }
