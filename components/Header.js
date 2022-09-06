@@ -3,6 +3,7 @@ import Link from 'next/link'
 //import styles from '../styles/Home.module.scss'
 import styles from '../styles/header.module.scss'
 import React, {useState} from "react"
+import Theme from './Theme.tsx'
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -52,6 +53,9 @@ export default function Header() {
                   <a>記事</a>
                 </Link>
               </li>
+              <li>
+                <Theme />
+              </li>
             </ul>
           </nav>
         </div>
@@ -95,6 +99,9 @@ export default function Header() {
               <p className={styles.mainTitle}>記事</p>
             </a>
             </Link>
+          </li>
+          <li>
+              <Theme />
           </li>
         </ul>
       </div>

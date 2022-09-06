@@ -4,6 +4,7 @@ import '../styles/globals.scss'
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import { GA_TRACKING_ID, pageview } from '../libs/gtag';
+import { ThemeProvider } from 'next-themes'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -44,7 +45,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           cardType: "summary_large_image",
         }}
       />
-      <Component {...pageProps} />
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   )
 }

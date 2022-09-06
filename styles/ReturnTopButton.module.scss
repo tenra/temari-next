@@ -32,6 +32,10 @@
     }
 }
 
+[data-theme="dark"] .activeStyle {
+    background-color: #59572f;
+}
+
 @media (max-width: 640px) {
     .normalStyle,
     .activeStyle {

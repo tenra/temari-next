@@ -2,6 +2,9 @@
   /*padding: 0 2rem;*/
   background-image: url(../public/washi.jpg);
 }
+[data-theme="dark"] .container {
+  background-image: none;
+}
 
 .main {
   min-height: 55vh;
