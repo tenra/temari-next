@@ -47,6 +47,14 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
                 <Link href={`/blogs/${blog.id}`}>
                   <a>
                     <div style={{display: "flex"}}>
+                      <div style={{width: "100px", height: "100px", position: "relative"}}>
+                          <Image
+                            src={blog.image ? blog.image.url : '/logo.png'}
+                            alt="blogs image"
+                            layout="fill"
+                            objectFit="contain"
+                          />
+                      </div>
                       <div>
                         <p>{blog.publishedAt}</p>
                         <h2>{blog.title}</h2>
@@ -57,6 +65,9 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
               </li>
             ))}
           </ul>
+          <Link href="/blogs">
+            <a>記事一覧</a>
+          </Link>
         </div>
 
         <div className={styles.grid}>

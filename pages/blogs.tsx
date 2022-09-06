@@ -1,12 +1,32 @@
-//import type { NextPage } from 'next'
+import type { InferGetStaticPropsType, NextPage } from 'next'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import Layout from '../components/Layout'
 import { NextSeo } from "next-seo"
 import Link from "next/link";
 import { client } from "../libs/client";
+import type { Blog } from "../types/blog"
 
-export default function Home({ blogs }) {
+// データをテンプレートに受け渡す部分の処理を記述します
+export const getStaticProps = async () => {
+  const data = await client.get({ endpoint: "blogs" });
+
+  return {
+    props: {
+      blogs: data.contents,
+    },
+  };
+};
+
+type Props = {
+  blogs: Blog[];
+};
+
+
+const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
+  blogs,
+}: Props) => {
+  
   return (
     <Layout>
       <div>
@@ -38,14 +58,4 @@ export default function Home({ blogs }) {
     </Layout>
   );
 }
-
-// データをテンプレートに受け渡す部分の処理を記述します
-export const getStaticProps = async () => {
-  const data = await client.get({ endpoint: "blogs" });
-
-  return {
-    props: {
-      blogs: data.contents,
-    },
-  };
-};
+export default Home

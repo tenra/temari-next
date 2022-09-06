@@ -3,7 +3,11 @@ export type Blog = {
     body: string;
     title: string;
     tags: Tag[];
-    image: string;
+    image: {
+        url: string;
+        height: number;
+        width: number;
+    }
     createdAt: string;
     updatedAt: string;
     publishedAt: string;
