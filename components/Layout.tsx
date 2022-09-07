@@ -1,12 +1,12 @@
 import Head from "next/head";
 import styles from '../styles/Home.module.scss'
-import Header from './Header.js'
-import Footer from './Footer.js'
-import ReturnTopButton from './ReturnTopButton.tsx'
+import { Header } from './Header'
+import { Footer } from './Footer'
+import ReturnTopButton from './ReturnTopButton'
 
 export const appName = "Temari Next"
 
-function Layout({ children }) {
+export const Layout: React.FC<{ children: React.ReactNode; }> = ({ children }) => {
     return (
         <div className={styles.container}>
             <Head>

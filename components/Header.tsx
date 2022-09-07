@@ -3,9 +3,10 @@ import Link from 'next/link'
 //import styles from '../styles/Home.module.scss'
 import styles from '../styles/header.module.scss'
 import React, {useState} from "react"
-import Theme from './Theme.tsx'
+import Theme from './Theme'
 
-export default function Header() {
+export const Header: React.FC = () => {
+
   const [openMenu, setOpenMenu] = useState(false);
   const menuFunction = () => {
     setOpenMenu(!openMenu);

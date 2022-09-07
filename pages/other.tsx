@@ -11,7 +11,7 @@ const Home: NextPage = () => {
 
       <Layout>
           <h1 className={styles.title}>Other</h1>
-
+          
           <p className={styles.description}>
             Get started by editing{' '}
             <code className={styles.code}>pages/index.tsx</code>
