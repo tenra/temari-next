@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-//import styles from '../styles/Home.module.scss'
 import styles from '../styles/header.module.scss'
 import React, {useState} from "react"
 import Theme from './Theme'
@@ -15,7 +14,7 @@ export const Header: React.FC = () => {
     <React.Fragment>
       <header className={styles.header}>
         <div>
-          <p>兵庫県美方郡香美町のデイサービスセンターてまり</p>
+          <p className="pt-2 text-sm sm:text-base">兵庫県美方郡香美町のデイサービスセンターてまり</p>
           <Link href="/">
             <div className={styles.header_logo}>
               <Image src="/logo.png" alt="temari logo" layout="fill" objectFit="contain" />
@@ -32,33 +31,6 @@ export const Header: React.FC = () => {
             <p className={styles.header_phone_number}>0796-36-3125</p>
             <p>受付時間 8:00 ~ 17:30</p>
           </div>
-          <nav>
-            <ul>
-              <li>
-                <Link href="/">
-                  <a>ホーム</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/other">
-                  <a>other</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/form">
-                  <a>form</a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/blogs">
-                  <a>記事</a>
-                </Link>
-              </li>
-              <li>
-                <Theme />
-              </li>
-            </ul>
-          </nav>
         </div>
         <div className={styles.humburger} onClick={() => menuFunction()}>
           <span className={openMenu ? styles.open : undefined}></span>
@@ -90,7 +62,7 @@ export const Header: React.FC = () => {
           <li>
             <Link href="/form">
             <a>
-              <p className={styles.mainTitle}>form</p>
+              <p className={styles.mainTitle}>お問い合わせフォーム</p>
             </a>
             </Link>
           </li>

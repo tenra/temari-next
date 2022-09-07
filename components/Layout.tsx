@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.scss'
 import { Header } from './Header'
 import { Footer } from './Footer'
 import ReturnTopButton from './ReturnTopButton'
+import ScrollMenu from './ScrollMenu'
 
 export const appName = "Temari Next"
 
@@ -16,6 +17,7 @@ export const Layout: React.FC<{ children: React.ReactNode; }> = ({ children }) =
             </Head>
 
             <Header />
+            <ScrollMenu />
             <main className={styles.main}>
                 { children }
             </main>

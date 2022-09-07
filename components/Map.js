@@ -32,6 +32,7 @@ export class MapContainer extends Component {
   render() {
     if (!this.props.loaded) return <div>Loading...</div>;
 
+    const coords = { lat: 35.6425586, lng: 134.6341719 };
     return (
       <Map
         className="map"
@@ -39,12 +40,12 @@ export class MapContainer extends Component {
         onClick={this.onMapClicked}
         style={{ height: "500px", position: "relative", width: "500px" }}
         zoom={15}
-        initialCenter={{ lat: 35.6425586, lng: 134.6341719 }}
+        initialCenter={coords}
       >
         <Marker
           name="デイサービスセンターてまり"
           onClick={this.onMarkerClick}
-          position={{ lat: 35.6425586, lng: 134.6341719 }}
+          position={coords}
         />
 
         <InfoWindow
