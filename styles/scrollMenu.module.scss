@@ -2,7 +2,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 70;
+    z-index: 40;
     background-color: white;
     width: 100%;
     .inner {
@@ -53,17 +53,6 @@
         visibility: visible;
     }
 }
-
-[data-theme='dark'] {
-    .scrollMenu {
-        color: #ddd;
-        background: #15202B;
-    }
-    .listYellow::after {
-        background: #ddd;
-    }
-} 
-
 
 @media (max-width: 640px) {
     .scrollMenu {

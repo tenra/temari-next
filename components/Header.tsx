@@ -3,6 +3,7 @@ import Link from 'next/link'
 import styles from '../styles/header.module.scss'
 import React, {useState} from "react"
 import Theme from './Theme'
+import { Phone } from 'iconoir-react'
 
 export const Header: React.FC = () => {
 
@@ -16,16 +17,14 @@ export const Header: React.FC = () => {
         <div>
           <p className="pt-2 text-sm sm:text-base">兵庫県美方郡香美町のデイサービスセンターてまり</p>
           <Link href="/">
-            <div className={styles.header_logo}>
+            <div className="relative w-80 lg:w-96 h-24 lg:h-28 z-50 cursor-pointer">
               <Image src="/logo.png" alt="temari logo" layout="fill" objectFit="contain" />
             </div>
           </Link>
         </div>
         <div className={styles.header_right}>
           <div className={styles.header_phone}>
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-            </svg>
+            <Phone className="h-10 w-10" />
           </div>
           <div className={styles.header_phone_right}>
             <p className={styles.header_phone_number}>0796-36-3125</p>

@@ -8,13 +8,6 @@
     align-items: center;
     z-index: 50;
 }
-.header_logo {
-    position: relative;
-    width: 350px;
-    height: 100px;
-    cursor: pointer;
-    z-index: 99;
-}
 
 .header_phone {
     width: 48px;
@@ -63,11 +56,10 @@
     height: 0;
     opacity: 0;
     z-index: -100;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-    min-height: 100dvh;
+    //min-height: 100vh;
+    //min-height: -webkit-fill-available;
     &.open {
-        height: 100vh;
+        //height: 100vh;
         height: -webkit-fill-available;
         opacity: 0.9;
         z-index: 100;

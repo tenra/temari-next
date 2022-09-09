@@ -16,7 +16,12 @@ module.exports = {
   },
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'washi-img': "url('../public/washi.jpg')",
+      })
+    },
   },
   plugins: [],
+  darkMode: 'class',
 }

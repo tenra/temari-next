@@ -35,10 +35,9 @@ export class MapContainer extends Component {
     const coords = { lat: 35.6425586, lng: 134.6341719 };
     return (
       <Map
-        className="map"
+        className=""
         google={this.props.google}
         onClick={this.onMapClicked}
-        style={{ height: "500px", position: "relative", width: "500px" }}
         zoom={15}
         initialCenter={coords}
       >

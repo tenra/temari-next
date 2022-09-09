@@ -61,7 +61,8 @@ function ContactForm() {
       })
   }
   return (
-    <main style={{margin: `0 auto`, width: 500, padding: `1.45rem 1.0875rem`}} >
+    <main style={{margin: `0 auto`, width: 500, padding: `1.45rem 1.0875rem`}}
+          className="bg-white rounded-lg dark:bg-gray-800 dark:border dark:border-gray-500">
       <h1 style={{textAlign: 'center'}}>お問い合わせフォーム</h1>
       <form onSubmit={handleOnSubmit}>
         <div style={{margin: `20px auto`}}>
@@ -73,6 +74,7 @@ function ContactForm() {
             required
             value={inputs.name}
             style={{width: '100%', padding: "0.5rem"}}
+            className="bg-gray-50 border-2 rounded dark:bg-gray-700 dark:border-gray-500"
             placeholder='例：山田太郎'
           />
         </div>
@@ -86,6 +88,7 @@ function ContactForm() {
             required
             value={inputs.email}
             style={{width: '100%', padding: "0.5rem"}}
+            className="bg-gray-50 border-2 rounded dark:bg-gray-700 dark:border-gray-500"
             placeholder='user@example.com'
           />
         </div>
@@ -98,6 +101,7 @@ function ContactForm() {
             required
             value={inputs.message}
             style={{width: '100%', padding: "0.5rem"}}
+            className="bg-gray-50 border-2 rounded dark:bg-gray-700 dark:border-gray-500"
             placeholder='500文字以内'
           />
         </div>
