@@ -9,17 +9,25 @@
     z-index: 50;
 }
 
+img.header_logo {
+        animation: topLogofadeIn 5s ease 0s 1 normal backwards;
+    }
+    @keyframes topLogofadeIn {
+        from {
+            opacity: 0.1;
+            transform: translateX(-30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+    }
+}
+
 .header_phone {
     width: 48px;
     display: inline-block;
     position: relative;
     top: 4px;
-}
-.header_phone_right {
-    display: inline-block;
-}
-.header_phone_number {
-    font-size: 1.5rem;
 }
 
 .humburger {

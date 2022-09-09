@@ -18,16 +18,16 @@ export const Header: React.FC = () => {
           <p className="pt-2 text-sm sm:text-base">兵庫県美方郡香美町のデイサービスセンターてまり</p>
           <Link href="/">
             <div className="relative w-80 lg:w-96 h-24 lg:h-28 z-50 cursor-pointer">
-              <Image src="/logo.png" alt="temari logo" layout="fill" objectFit="contain" />
+              <Image src="/logo.png" className={styles.header_logo} alt="temari logo" layout="fill" objectFit="contain" />
             </div>
           </Link>
         </div>
         <div className={styles.header_right}>
           <div className={styles.header_phone}>
-            <Phone className="h-10 w-10" />
+            <Phone className="h-10 w-10 relative bottom-1" />
           </div>
-          <div className={styles.header_phone_right}>
-            <p className={styles.header_phone_number}>0796-36-3125</p>
+          <div className="inline-block">
+            <p className="text-2xl">0796-36-3125</p>
             <p>受付時間 8:00 ~ 17:30</p>
           </div>
         </div>

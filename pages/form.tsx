@@ -16,9 +16,9 @@ export default function App() {
       />
 
       <Layout>
-        <div>
+        <>
           <ContactForm />
-        </div>
+        </>
       </Layout>
     </>
   )

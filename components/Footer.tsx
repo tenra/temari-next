@@ -29,6 +29,13 @@ export const Footer: React.FC = () => {
           <Map />
         </div>
       </div>
+      <hr />
+      <Link href="/">
+        <a>ホーム</a>
+      </Link>
+      <Link href="/privacy">
+        <a>プライバシーポリシー</a>
+      </Link>
     </footer>
   )
 };

@@ -29,6 +29,7 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   
   return (
     <Layout>
+      <h1 className={styles.title_fade_in}>記事</h1>
       <div>
         <ul>
           {blogs.map((blogs) => (

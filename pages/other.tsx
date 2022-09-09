@@ -10,7 +10,7 @@ const Home: NextPage = () => {
       <NextSeo noindex={true} />
 
       <Layout>
-          <h1 className={styles.title}>Other</h1>
+          <h1 className={styles.title_fade_in}>Other</h1>
           
           <p className={styles.description}>
             Get started by editing{' '}

@@ -29,8 +29,12 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
 
   return (
     <Layout>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Temari with Next.js!</a>
+        <h1 className={styles.top_title_fade_in}>
+          ようこそ
+          <span className="font-bold bg-gradient-to-r from-yellow-500 via-pink-500 to-green-500 bg-clip-text text-transparent">
+            てまり
+          </span>
+          のホームページへ
         </h1>
 
         <Slider />

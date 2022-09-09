@@ -41,7 +41,7 @@ export default function App() {
       </SwiperSlide>
       <SwiperSlide>
         <div className={styles.slider_image}>
-          <Image src="/footer.jpg" alt="temari image" layout="fill" objectFit="cover" />
+          <Image src="/rehabili.jpg" alt="temari image" layout="fill" objectFit="cover" />
           <h2 className={styles.slider_image_message}>
           Next Message
         </h2>
@@ -49,7 +49,7 @@ export default function App() {
       </SwiperSlide>
       <SwiperSlide>
         <div className={styles.slider_image}>
-          <Image src="/logo.png" alt="temari image" layout="fill" objectFit="cover" />
+          <Image src="/wheelchair.jpg" alt="temari image" layout="fill" objectFit="cover" />
           <h2 className={styles.slider_image_message}>
             3 Next Message
           </h2>
