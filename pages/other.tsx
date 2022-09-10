@@ -15,6 +15,10 @@ const Home: NextPage = () => {
             Other
           </h1>
           
+          <div className="py-7 px-7">
+            <Image className="rounded-lg" src="/footer.jpg" alt="temari image" width={500} height={300} objectFit="cover" />
+          </div>
+
           <p className={styles.description}>
             Get started by editing{' '}
             <code className={styles.code}>pages/index.tsx</code>

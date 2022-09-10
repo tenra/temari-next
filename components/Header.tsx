@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../styles/header.module.scss'
 import React, {useState} from "react"
 import Theme from './Theme'
-import { Phone } from 'iconoir-react'
+import { Phone, Mail } from 'iconoir-react'
 
 export const Header: React.FC = () => {
 
@@ -31,7 +31,8 @@ export const Header: React.FC = () => {
             <p>受付時間 8:00 ~ 17:30</p>
           </div>
           <Link href="/form">
-            <a className="block text-center bg-yellow-300 hover:bg-yellow-400 duration-1000 w-full mt-2 py-1 px-2 rounded-3xl drop-shadow-lg">
+            <a className="block text-cente dark:text-black bg-yellow-300 hover:bg-yellow-400 duration-1000 w-full mt-2 py-1 pl-3 pr-2 rounded-3xl drop-shadow-lg">
+              <Mail className="inline-block mr-1 relative bottom-0.5" />
               お問い合わせフォーム
             </a>
           </Link>

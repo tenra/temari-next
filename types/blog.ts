@@ -1,5 +1,5 @@
 export type Blog = {
-    id: string;
+    id: number;
     body: string;
     title: string;
     tags: Tag[];
@@ -15,7 +15,7 @@ export type Blog = {
 };
 
 export type Tag = {
-    id: string;
+    id: number;
     tag: string;
     createdAt: string;
     updatedAt: string;

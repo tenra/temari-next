@@ -35,6 +35,11 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
             てまり
           </span>
           のホームページへ
+          <span
+            className="absolute left-1/2 -translate-x-1/2 bottom-0 right-0 -z-10 w-2/3 h-3 bg-yellow-300 opacity-60"
+            style={{borderRadius: '50%'}}
+          >
+          </span>
         </h1>
         <div style={{ margin: '0 calc(50% - 50vw)', width: '100vw' }}>
           <Slider />
@@ -44,6 +49,13 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx////////</code>
         </p>
+
+        {/*
+        <div style={{ margin: '0 calc(50% - 50vw)', width: '100vw' }}>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fillOpacity="1" d="M0,288L120,293.3C240,299,480,309,720,304C960,299,1200,277,1320,266.7L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fillOpacity="1" d="M0,128L120,128C240,128,480,128,720,106.7C960,85,1200,43,1320,21.3L1440,0L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
+        </div>
+        */}
 
         <div>
           <ul>

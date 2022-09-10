@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Theme from './Theme'
 import styles from '../styles/scrollMenu.module.scss'
+import { Link as ScrollLink } from 'react-scroll';
 
 const scrollTop = (): number => {
   return Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop);
@@ -76,6 +77,11 @@ export const NavBar: React.FC = () => {
                   </li>
                 </a>
               </Link>
+              <ScrollLink to="access" smooth={true} duration={1000}>
+                <li className={styles.listYellow}>
+                  アクセス
+                </li>
+              </ScrollLink>
               <li>
                 <Theme />
               </li>

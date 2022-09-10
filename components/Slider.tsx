@@ -50,7 +50,7 @@ export default function App() {
       </SwiperSlide>
       <SwiperSlide>
         <div className={styles.slider_image}>
-          <Image src="/wheelchair.jpg" alt="temari image" layout="fill" objectFit="cover" />
+          <Image src="/sky.jpg" alt="temari image" layout="fill" objectFit="cover" />
           <h2 className={styles.slider_image_message}>
             3 Next Message
           </h2>

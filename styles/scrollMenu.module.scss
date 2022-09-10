@@ -3,7 +3,8 @@
     position: sticky;
     top: 0;
     z-index: 40;
-    width: 100%;
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
     .inner {
         display: flex;
         //justify-content: space-between;
@@ -24,13 +25,14 @@
         position: relative;
         list-style-type: none!important;/*ポチ消す*/
         font-weight: bold;
+        cursor: pointer;
     }
     li.listYellow:before { 
         display:inline-block; 
         content:'';
         width: 0.7em;
         height: 0.7em;
-        background: #f7e90b;
+        background: #fde146;
         border-radius: 50%;
         margin-right: 10px;
     }

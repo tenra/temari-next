@@ -15,12 +15,14 @@
 }
 
 .top_title_fade_in {
+  position: relative;
   font-size: 3rem;
   line-height: 1.5;
   text-align: center;
-    padding-bottom: 2.5rem;
-    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-    animation: fadeIn 5s ease 0s 1 normal backwards;
+  margin: 0 auto 2.5rem;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  transform-style: preserve-3d;
+  animation: fadeIn 5s ease 0s 1 normal backwards;
     @keyframes fadeIn {
       from {
         opacity: 0.1;

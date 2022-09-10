@@ -16,13 +16,15 @@ export const Layout: React.FC<{ children: React.ReactNode; }> = ({ children }) =
                 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
             </Head>
 
-            <Header />
-            <ScrollMenu />
-            <main className="py-14 px-1 sm:px-2 max-w-5xl mx-auto">
-                { children }
-            </main>
-            <Footer />
-            <ReturnTopButton />
+            <div className="max-w-7xl mx-auto">
+                <Header />
+                <ScrollMenu />
+                <main className="py-14 px-1 sm:px-2 max-w-5xl mx-auto">
+                    { children }
+                </main>
+                <Footer />
+                <ReturnTopButton />
+            </div>
         </div>
     );
 }
