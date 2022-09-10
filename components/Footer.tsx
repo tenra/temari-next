@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Map from './Map.js'
+import styles from '../styles/Home.module.scss'
 
 export const Footer: React.FC = () => {
   return (
@@ -8,6 +9,11 @@ export const Footer: React.FC = () => {
       <div className="py-7 px-7">
         <Image className="rounded-lg" src="/footer.jpg" alt="temari image" width={500} height={300} objectFit="cover" />
       </div>
+
+      <h1 className={styles.title_fade_in}>
+        <span className="absolute -bottom-1 -z-10 w-full h-3 bg-yellow-300 opacity-80" style={{borderRadius: '50%'}}></span>
+        アクセス
+      </h1>
       <div className="md:flex px-2">
         <div className="w-full md:w-1/2 px-3">
           <p className="font-bold">デイサービスセンターてまり</p>

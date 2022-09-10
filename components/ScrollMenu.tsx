@@ -13,7 +13,7 @@ export const NavBar: React.FC = () => {
 
   const onScroll = (): void => {
     const position = scrollTop();
-    if (position >= 110) {
+    if (position >= 140) {
       setIsTop(false);
     } else {
       setIsTop(true);
@@ -26,12 +26,16 @@ export const NavBar: React.FC = () => {
   });
 
   const  scrollStyle: React.CSSProperties = isTop
-    ? { boxShadow: "none" }
-    : { transition: "0.5s", boxShadow: "0px 5px 10px 0px rgb(0 0 0 / 10%)"};
+    ? { boxShadow: "none", backgroundColor: "rgb(248 245 233)" }
+    : { transition: "0.5s", boxShadow: "0px 5px 10px -5px rgb(0 0 0 / 10%)", backgroundColor: "white"};
 
   const  scrollLogo: React.CSSProperties = isTop
     ? { position: "relative", top: "-200px", opacity: "0" }
     : { position: "relative", top: "0", transition: "0.5s", opacity: "1" };
+
+  const  scrollNav: React.CSSProperties = isTop
+    ? { transform: "none", transition: "0.5s" }
+    : { transform: "translate3d(20px,0,0)", transition: "0.5s" };
 
   return (
     <div style={scrollStyle} className={styles.scrollMenu}>
@@ -44,7 +48,7 @@ export const NavBar: React.FC = () => {
               </div>
             </Link>
           </div>
-          <nav>
+          <nav style={scrollNav}>
             <ul>
               <Link href="/">
                 <a>

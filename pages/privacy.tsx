@@ -9,7 +9,10 @@ const Privacy: NextPage = () => {
             <NextSeo noindex={true} />
 
             <Layout>
-            <h1 className={styles.title_fade_in}>プライバシーポリシー</h1>
+            <h1 className={`${styles.title_fade_in} ${styles.width_vw}`}>
+                <span className="absolute -bottom-1 -z-10 w-full h-3 bg-yellow-300 opacity-80" style={{borderRadius: '50%'}}></span>
+                プライバシーポリシー
+            </h1>
                 <p>
                 株式会社てまり（以下「当社」）は、以下のとおり個人情報保護方針を定め、
 個人情報保護の仕組みを構築し、全従業員に個人情報保護の重要性の認識と取組みを

@@ -18,7 +18,7 @@ export const Layout: React.FC<{ children: React.ReactNode; }> = ({ children }) =
 
             <Header />
             <ScrollMenu />
-            <main className="py-16 px-1 sm:px-2 max-w-5xl mx-auto">
+            <main className="py-14 px-1 sm:px-2 max-w-5xl mx-auto">
                 { children }
             </main>
             <Footer />

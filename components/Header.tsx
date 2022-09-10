@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
             </div>
           </Link>
         </div>
-        <div className={styles.header_right}>
+        <div className="hidden sm:block relative top-2">
           <div className={styles.header_phone}>
             <Phone className="h-10 w-10 relative bottom-1" />
           </div>
@@ -30,6 +30,11 @@ export const Header: React.FC = () => {
             <p className="text-2xl">0796-36-3125</p>
             <p>受付時間 8:00 ~ 17:30</p>
           </div>
+          <Link href="/form">
+            <a className="block text-center bg-yellow-300 hover:bg-yellow-400 duration-1000 w-full mt-2 py-1 px-2 rounded-3xl drop-shadow-lg">
+              お問い合わせフォーム
+            </a>
+          </Link>
         </div>
         <div className={styles.humburger} onClick={() => menuFunction()}>
           <span className={openMenu ? styles.open : undefined}></span>

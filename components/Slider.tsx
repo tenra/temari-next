@@ -33,18 +33,19 @@ export default function App() {
         <div className={styles.slider_image}>
           <Image src="/top.jpg" alt="temari image" layout="fill" objectFit="cover" />
           <h2 className={styles.slider_image_message}>
-            住み慣れた我が家を一歩出て<br />
-            デイサービスセンターてまりで<br />
-            一日過ごされませんか
+            <p>住み慣れた我が家を一歩出て</p>
+            <p>デイサービスセンターてまりで</p>
+            <p>一日過ごされませんか</p>
           </h2>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className={styles.slider_image}>
           <Image src="/rehabili.jpg" alt="temari image" layout="fill" objectFit="cover" />
-          <h2 className={styles.slider_image_message}>
-          Next Message
-        </h2>
+          <h2 className={`${styles.slider_image_message} ${styles.slider_image_message_2nd}`}>
+            <p>リハビリも楽しく</p>
+            <p>がんばれる</p>
+          </h2>
         </div>
       </SwiperSlide>
       <SwiperSlide>

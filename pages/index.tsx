@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 import Layout from '../components/Layout'
-import Slider from '../components/Slider.js'
+import Slider from '../components/Slider'
 import { client } from "../libs/client";
 import type { Blog } from "../types/blog"
 
@@ -31,13 +31,14 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
     <Layout>
         <h1 className={styles.top_title_fade_in}>
           ようこそ
-          <span className="font-bold bg-gradient-to-r from-yellow-500 via-pink-500 to-green-500 bg-clip-text text-transparent">
+          <span className="font-bold bg-gradient-to-r from-yellow-300 via-pink-500 to-green-500 bg-clip-text text-transparent">
             てまり
           </span>
           のホームページへ
         </h1>
-
-        <Slider />
+        <div style={{ margin: '0 calc(50% - 50vw)', width: '100vw' }}>
+          <Slider />
+        </div>
 
         <p className={styles.description}>
           Get started by editing{' '}
