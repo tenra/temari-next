@@ -74,7 +74,7 @@ export const Header: React.FC = () => {
           <li>
             <Link href="/blogs">
             <a>
-              <p className={styles.mainTitle}>記事</p>
+              <p className={styles.mainTitle}>お知らせ</p>
             </a>
             </Link>
           </li>

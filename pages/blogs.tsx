@@ -31,7 +31,7 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
     <Layout>
       <h1 className={styles.title_fade_in}>
         <span className="absolute -bottom-1 -z-10 w-full h-3 bg-yellow-300 opacity-80" style={{borderRadius: '50%'}}></span>
-        記事
+        お知らせ
       </h1>
       <div>
         <ul>

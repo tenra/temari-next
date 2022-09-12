@@ -28,7 +28,7 @@ export const NavBar: React.FC = () => {
 
   const  scrollStyle: React.CSSProperties = isTop
     ? { boxShadow: "none", backgroundColor: "rgb(248 245 233)" }
-    : { transition: "0.5s", boxShadow: "0px 5px 10px -5px rgb(0 0 0 / 10%)", backgroundColor: "white"};
+    : { transition: "0.5s", boxShadow: "0px 5px 10px -5px rgb(0 0 0 / 10%)", backgroundColor: "#fffef8"};
 
   const  scrollLogo: React.CSSProperties = isTop
     ? { position: "relative", top: "-200px", opacity: "0" }
@@ -73,7 +73,7 @@ export const NavBar: React.FC = () => {
               <Link href="/blogs">
                 <a>
                   <li className={styles.listYellow}>
-                      記事
+                      お知らせ
                   </li>
                 </a>
               </Link>

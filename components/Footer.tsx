@@ -8,19 +8,19 @@ export const Footer: React.FC = () => {
   return (
     <footer className="max-w-6xl mx-auto">
       <div className="py-10">
-        <h1 className={styles.title_fade_in} id="access">
+        <h2 className={styles.title_no_fade} id="access">
           <span className="absolute -bottom-1 -z-10 w-full h-3 bg-yellow-300 opacity-80" style={{borderRadius: '50%'}}></span>
           アクセス
-        </h1>
+        </h2>
         <div className="sm:flex px-2">
-          <div className="w-full sm:w-1/3 sm:px-3">
+          <div className="w-full sm:w-1/3 sm:px-3 pb-5">
             <p className="font-bold">デイサービスセンターてまり</p>
             <p>〒669-6543</p>
             <p>兵庫県美方郡香美町香住区若松521</p>
             <p><span className="bg-yellow-300 dark:text-gray-800 px-2 mr-2 rounded-md">TEL</span>0796-36-3125</p>
             <p><span className="bg-yellow-300 dark:text-gray-800 px-2 mr-2 rounded-md">FAX</span>0796-34-9056</p>
             <p><span className="bg-yellow-300 dark:text-gray-800 px-2 mr-2 rounded-md">受付時間</span>8:00~17:00</p>
-            <hr className="my-2 border-t-2" />
+            <hr className="my-4 border-t-2" />
             <div>
               <ul className="list-disc list-inside marker:text-yellow-300">
                 <li>香住インターチェンジより車で5分。</li>

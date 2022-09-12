@@ -41,7 +41,7 @@ export default function App() {
       </SwiperSlide>
       <SwiperSlide>
         <div className={styles.slider_image}>
-          <Image src="/rehabili.jpg" alt="temari image" layout="fill" objectFit="cover" />
+          <Image src="/riha.jpg" alt="temari image" layout="fill" objectFit="cover" />
           <h2 className={`${styles.slider_image_message} ${styles.slider_image_message_2nd}`}>
             <p>リハビリも楽しく</p>
             <p>がんばれる</p>
@@ -51,8 +51,8 @@ export default function App() {
       <SwiperSlide>
         <div className={styles.slider_image}>
           <Image src="/sky.jpg" alt="temari image" layout="fill" objectFit="cover" />
-          <h2 className={styles.slider_image_message}>
-            3 Next Message
+          <h2 className={`${styles.slider_image_message} ${styles.slider_image_message_3nd}`}>
+            新しい楽しみを<br className="hidden sm:block" />みつけてみませんか
           </h2>
         </div>
       </SwiperSlide>

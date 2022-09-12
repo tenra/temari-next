@@ -8,11 +8,11 @@
   align-items: center;
 }*/
 
-.description {
+/*.description {
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
-}
+}*/
 
 .top_title_fade_in {
   position: relative;
@@ -41,6 +41,7 @@
     width: fit-content;
     margin: 0 auto 2.5rem;
     position: relative;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     transform-style: preserve-3d;
     animation: fadeIn 5s ease 0s 1 normal backwards;
     @keyframes fadeIn {
@@ -53,6 +54,16 @@
         transform: translateX(0);
       }
     }
+}
+
+.title_no_fade {
+  font-size: 3rem;
+  line-height: 1;
+  width: fit-content;
+  margin: 0 auto 2.5rem;
+  position: relative;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  transform-style: preserve-3d;
 }
 
 .code {

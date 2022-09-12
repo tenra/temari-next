@@ -19,6 +19,11 @@
     font-size: 3.5rem;
 }
 
+.slider_image_message.slider_image_message_3nd {
+    bottom: 250px;
+    font-size: 3rem;
+}
+
 @media (max-width: 640px) {
     .slider_image {
         height: 400px;
@@ -34,6 +39,9 @@
         p {
             font-size: 2.5rem;
         }
+    }
+    .slider_image_message.slider_image_message_3nd {
+        font-size: 2.5rem;
     }
 
 }
