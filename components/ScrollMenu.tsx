@@ -56,17 +56,24 @@ export const NavBar: React.FC = () => {
                   <li className={styles.listYellow}>ホーム</li>
                 </a>
               </Link>
-              <Link href="/other">
+              <Link href="/flow">
                 <a>
                   <li className={styles.listYellow}>
-                      other
+                      1日の流れ
                   </li>
                 </a>
               </Link>
-              <Link href="/form">
+              <Link href="/facility">
                 <a>
                   <li className={styles.listYellow}>
-                      お問い合わせフォーム
+                      施設の様子
+                  </li>
+                </a>
+              </Link>
+              <Link href="/">
+                <a>
+                  <li className={styles.listYellow}>
+                      スタッフ募集
                   </li>
                 </a>
               </Link>

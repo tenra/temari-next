@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "TZ='Asia/Tokyo' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,8 +11,10 @@
   "dependencies": {
     "@formspree/cli": "^0.9.6",
     "@formspree/react": "^2.3.3",
+    "@tailwindcss/line-clamp": "^0.4.2",
     "@types/react-scroll": "^1.8.4",
     "axios": "^0.27.2",
+    "date-fns": "^2.29.2",
     "google-maps-react": "^2.0.6",
     "iconoir-react": "^5.2.0",
     "microcms-js-sdk": "^2.2.1",

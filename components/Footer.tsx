@@ -53,6 +53,16 @@ export const Footer: React.FC = () => {
             </Link>
           </li>
           <li className="hover:underline underline-offset-8">
+            <Link href="/company">
+              <a>会社概要</a>
+            </Link>
+          </li>
+          <li className="hover:underline underline-offset-8">
+            <Link href="/form">
+              <a>お問い合わせフォーム</a>
+            </Link>
+          </li>
+          <li className="hover:underline underline-offset-8">
             <Link href="/privacy">
               <a>プライバシーポリシー</a>
             </Link>

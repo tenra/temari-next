@@ -11,7 +11,7 @@ export const Layout: React.FC<{ children: React.ReactNode; }> = ({ children }) =
     return (
         <div className="bg-[url('../public/bgWa.jpg')] leading-7 dark:bg-none">
             <Head>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/favi.ico" />
                 <meta name="google-site-verification" content="Q6UYAJ7gGkvWNdeXXECi6Pebh0fAeMlM8EiFB5-N2N0" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
             </Head>

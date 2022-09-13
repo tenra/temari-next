@@ -6,6 +6,7 @@ import { NextSeo } from "next-seo"
 import Link from "next/link";
 import { client } from "../libs/client";
 import type { Blog } from "../types/blog"
+import Date from '../components/Date'
 
 // データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps = async () => {
@@ -22,7 +23,6 @@ type Props = {
   blogs: Blog[];
 };
 
-
 const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   blogs,
 }: Props) => {
@@ -33,24 +33,29 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         <span className="absolute -bottom-1 -z-10 w-full h-3 bg-yellow-300 opacity-80" style={{borderRadius: '50%'}}></span>
         お知らせ
       </h1>
-      <div>
+      <div className="max-w-4xl mx-auto">
         <ul>
-          {blogs.map((blogs) => (
-            <li key={blogs.id} style={{listStyle: "none"}}>
-              <Link href={`/blogs/${blogs.id}`}>
-                <a>
-                  <div style={{display: "flex"}}>
-                    <div style={{width: "100px", height: "100px", position: "relative"}}>
+          {blogs.map((blog) => (
+            <li key={blog.id} className="list-none py-4">
+              <Link href={`/blogs/${blog.id}`}>
+                <a className="text-sky-700 hover:text-sky-900 dark:text-gray-200 ">
+                  <div className="flex">
+                    <div className="relative h-auto" style={{ minWidth: "100px"}}>
                         <Image
-                          src={blogs.image ? blogs.image.url : '/logo.png'}
+                          src={blog.image ? blog.image.url : '/temari_only.png'}
                           alt="blogs image"
                           layout="fill"
                           objectFit="contain"
+                          objectPosition={"50% 50%;"}
                         />
                     </div>
-                    <div>
-                      <p>{blogs.publishedAt}</p>
-                      <h2>{blogs.title}</h2>
+                    <div className="">
+                      <div className="text-black dark:text-gray-200">
+                        <Date dateString={blog.publishedAt} />
+                      </div>
+                      <div className="line-clamp-1 underline underline-offset-4">
+                        <h2 className="text-lg">{blog.title}</h2>
+                      </div>
                     </div>
                   </div>
                 </a>

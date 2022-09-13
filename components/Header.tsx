@@ -58,9 +58,30 @@ export const Header: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link href="/other">
+            <Link href="/flow">
             <a>
-              <p className={styles.mainTitle}>other</p>
+              <p className={styles.mainTitle}>1日の流れ</p>
+            </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/facility">
+            <a>
+              <p className={styles.mainTitle}>施設の様子</p>
+            </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+            <a>
+              <p className={styles.mainTitle}>スタッフ募集</p>
+            </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/blogs">
+            <a>
+              <p className={styles.mainTitle}>お知らせ</p>
             </a>
             </Link>
           </li>
@@ -72,9 +93,16 @@ export const Header: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link href="/blogs">
+            <Link href="/company">
             <a>
-              <p className={styles.mainTitle}>お知らせ</p>
+              <p className={styles.mainTitle}>会社概要</p>
+            </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/privacy">
+            <a>
+              <p className={styles.mainTitle}>プライバシーポリシー</p>
             </a>
             </Link>
           </li>
