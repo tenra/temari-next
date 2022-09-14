@@ -10,9 +10,10 @@ export default function Custom404() {
             <NextSeo noindex={true} />
 
             <Layout>
-                <div style={{textAlign: "center"}}>
-                    <h1>Not Found<br />404<br />ご指定のページが見つかりません</h1>
-                    <p>申し訳ありませんが、ご指定のページは見つかりませんでした。入力したアドレスが間違っているか、ページが移動もしくは削除されている可能性があります。</p>
+                <div className="text-center max-w-3xl mx-auto">
+                    <h2 className="text-3xl font-bold py-4">Not Found 404</h2>
+                    <h1 className="text-4xl font-bold py-4">ご指定のページが見つかりません</h1>
+                    <p className="py-4">申し訳ありませんが、ご指定のページは見つかりませんでした。入力したアドレスが間違っているか、ページが移動もしくは削除されている可能性があります。</p>
                 </div>
             </Layout>
         </>

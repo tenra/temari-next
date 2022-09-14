@@ -2,9 +2,11 @@ import type { AppProps } from 'next/app'
 import { NextSeo } from "next-seo";
 import '../styles/globals.scss'
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { GA_TRACKING_ID, pageview } from '../libs/gtag';
 import { ThemeProvider } from 'next-themes'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -20,6 +22,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
   }, [router.events]);
+
+  React.useEffect(() => {
+    AOS.init();
+  },[]);
 
   return (
     <>

@@ -9,7 +9,7 @@ export const appName = "Temari Next"
 
 export const Layout: React.FC<{ children: React.ReactNode; }> = ({ children }) => {
     return (
-        <div className="bg-[url('../public/bgWa.jpg')] leading-7 dark:bg-none">
+        <div>
             <Head>
                 <link rel="icon" href="/favi.ico" />
                 <meta name="google-site-verification" content="Q6UYAJ7gGkvWNdeXXECi6Pebh0fAeMlM8EiFB5-N2N0" />
@@ -19,7 +19,7 @@ export const Layout: React.FC<{ children: React.ReactNode; }> = ({ children }) =
             <div className="max-w-7xl mx-auto">
                 <Header />
                 <ScrollMenu />
-                <main className="py-14 px-1 sm:px-2 max-w-5xl mx-auto">
+                <main className="pt-14 pb-24 px-1 sm:px-2 max-w-5xl mx-auto">
                     { children }
                 </main>
                 <Footer />
