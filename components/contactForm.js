@@ -120,7 +120,7 @@ function ContactForm() {
             />
           </div>
           <p>
-            <Link href="/privacy"><a className="text-blue-700 hover:text-blue-900">プライバシーポリシー</a></Link>に同意の上、送信して下さい。
+            <Link href="/privacy"><a className="text-sky-700 hover:text-sky-900 underline underline-offset-4">プライバシーポリシー</a></Link>に同意の上、送信して下さい。
           </p>
           <div className="text-center py-5">
             <button

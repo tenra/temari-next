@@ -13,6 +13,16 @@
   line-height: 1.5;
   font-size: 1.5rem;
 }*/
+@keyframes fadeIn {
+  from {
+    opacity: 0.1;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 .top_title_fade_in {
   position: relative;
@@ -23,16 +33,6 @@
   font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   transform-style: preserve-3d;
   animation: fadeIn 5s ease 0s 1 normal backwards;
-    @keyframes fadeIn {
-      from {
-        opacity: 0.1;
-        transform: translateX(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
 }
 
 .title_fade_in {
@@ -44,16 +44,19 @@
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     transform-style: preserve-3d;
     animation: fadeIn 5s ease 0s 1 normal backwards;
-    @keyframes fadeIn {
-      from {
-        opacity: 0.1;
-        transform: translateX(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
+}
+
+.title_fade_in_white {
+  font-size: 3rem;
+  line-height: 1;
+  width: fit-content;
+  margin: 0 auto 2.5rem;
+  position: relative;
+  color: white;
+  text-shadow: 1px 2px 3px #555555;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  transform-style: preserve-3d;
+  animation: fadeIn 5s ease 0s 1 normal backwards;
 }
 
 .title_no_fade {

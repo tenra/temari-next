@@ -45,24 +45,46 @@ export const Footer: React.FC = () => {
           </a>
         </div>
       </div>
-      <div className="border-t-2 pt-10 pb-5">
-        <ul className="list-disc list-inside flex flex-wrap justify-around marker:text-yellow-300">
-          <li className="hover:underline underline-offset-8">
+      <div className="border-t-2 max-w-4xl mx-auto leading-10 pt-10">
+        <ul className="list-disc list-inside sm:flex flex-wrap justify-center marker:text-yellow-300 pb-5">
+          <li className="hover:underline underline-offset-8 px-4">
             <Link href="/">
               <a>ホーム</a>
             </Link>
           </li>
-          <li className="hover:underline underline-offset-8">
+          <li className="hover:underline underline-offset-8 px-4">
+            <Link href="/flow">
+              <a>1日の流れ</a>
+            </Link>
+          </li>
+          <li className="hover:underline underline-offset-8 px-4">
+            <Link href="/facility">
+              <a>施設の様子</a>
+            </Link>
+          </li>
+          <li className="hover:underline underline-offset-8 px-4">
+            <Link href="/recruit">
+              <a>スタッフ募集</a>
+            </Link>
+          </li>
+          <li className="hover:underline underline-offset-8 px-4">
+            <Link href="/blogs">
+              <a>お知らせ</a>
+            </Link>
+          </li>
+        </ul>
+        <ul className="list-disc list-inside sm:flex flex-wrap justify-center marker:text-yellow-300">
+          <li className="hover:underline underline-offset-8 px-4">
             <Link href="/company">
               <a>会社概要</a>
             </Link>
           </li>
-          <li className="hover:underline underline-offset-8">
+          <li className="hover:underline underline-offset-8 px-4">
             <Link href="/form">
               <a>お問い合わせフォーム</a>
             </Link>
           </li>
-          <li className="hover:underline underline-offset-8">
+          <li className="hover:underline underline-offset-8 px-4">
             <Link href="/privacy">
               <a>プライバシーポリシー</a>
             </Link>
@@ -72,8 +94,6 @@ export const Footer: React.FC = () => {
           <CopyLight />
         </div>
       </div>
-      
-      
     </footer>
   )
 };
