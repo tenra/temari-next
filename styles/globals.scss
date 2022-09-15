@@ -39,6 +39,19 @@ p {
   width: 100%;
 }
 
+.image-container {
+  width: 100%;
+  > span {
+    position: unset !important;
+  }
+  .image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
 @media (max-width: 640px) {
   
 }

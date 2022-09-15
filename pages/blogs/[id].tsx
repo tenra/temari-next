@@ -40,26 +40,25 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   return (
     <Layout>
       <div className="max-w-3xl mx-auto">
-          <div className="text-right py-3">
+          <div className="text-right">
             <Date dateString={blogs.publishedAt} />
           </div>
+          <h1 className="text-4xl font-bold py-3">{blogs.title}</h1>
           <div style={blogs.image ? undefined : displayNone}>
-              <div className="">
+              <div className={'image-container'}>
                 <Image
                   src={blogs.image ? blogs.image.url : '/logo.png'}
                   alt="blogs image"
-                  width="100%"
-                  height="100%"
-                  layout="responsive"
-                  objectFit="contain"
+                  layout="fill"
+                  className={'image'}
                 />
               </div>
           </div>
-          <h1>{blogs.title}</h1>
           <div
             dangerouslySetInnerHTML={{
               __html: `${blogs.body}`,
             }}
+            className="py-3"
             style={{width: "100%"}}
           />
       </div>

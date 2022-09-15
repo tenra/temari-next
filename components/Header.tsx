@@ -72,7 +72,7 @@ export const Header: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/recruit">
             <a>
               <p className={styles.mainTitle}>スタッフ募集</p>
             </a>

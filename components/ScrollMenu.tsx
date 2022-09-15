@@ -70,7 +70,7 @@ export const NavBar: React.FC = () => {
                   </li>
                 </a>
               </Link>
-              <Link href="/">
+              <Link href="/recruit">
                 <a>
                   <li className={styles.listYellow}>
                       スタッフ募集
