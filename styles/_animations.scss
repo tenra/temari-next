@@ -1,0 +1,22 @@
+// aos override
+$aos-distance: 30px !default;
+
+@media screen {
+    html:not(.no-js) {
+        [data-aos^='fade'][data-aos^='fade'] {
+        opacity: 0;
+        transition-property: opacity, transform;
+            &.aos-animate {
+                opacity: 1;
+                transform: none !important;
+            }
+        }
+
+        [data-aos='fade-up'] {
+            transform: translate3d(0, $aos-distance, 0) !important;
+        }
+        [data-aos='fade-left'] {
+            transform: translate3d($aos-distance, 0, 0) !important;
+        }
+    }
+}

@@ -7,8 +7,8 @@ import styles from '../styles/Home.module.scss'
 export const Footer: React.FC = () => {
   return (
     <footer className="max-w-6xl mx-auto">
-      <div className="py-10" data-aos="fade-up" data-aos-delay="0" data-aos-duration="2500" data-aos-easing="ease">
-        <h2 className={styles.title_no_fade} id="access" data-aos="fade-left" data-aos-delay="0" data-aos-duration="2500" data-aos-easing="ease">
+      <div className="py-10" data-aos="fade-up" data-aos-delay="0" data-aos-duration="2500" data-aos-easing="ease" data-aos-once="true">
+        <h2 className={styles.title_no_fade} id="access" data-aos="fade-left" data-aos-delay="0" data-aos-duration="2500" data-aos-easing="ease" data-aos-once="true">
           <span className="absolute -bottom-1 -z-10 w-full h-3 bg-yellow-300 opacity-80" style={{borderRadius: '50%'}}></span>
           アクセス
         </h2>

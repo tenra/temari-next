@@ -22,6 +22,9 @@ body {
   100% {opacity: 1}
 }
 
+// aos-distance override
+@import 'animations';
+
 a {
   color: inherit;
   text-decoration: none;
