@@ -9,7 +9,7 @@ export default function SigninPage() {
 
     useEffect(() => {
         if (session) {
-        Router.push('/admin')
+            Router.push('/admin')
         }
     })
 

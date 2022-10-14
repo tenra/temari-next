@@ -42,7 +42,7 @@ export function SigninForm() {
                 className="flex flex-col space-y-4"
             >
             <p>
-                To sign in or create an account, please enter your email address.
+                To sign in, please enter your email address.
                 You will receive a magic link in your mailbox.
             </p>
             <div className="form-group">

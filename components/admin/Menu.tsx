@@ -15,7 +15,7 @@ export function Menu({ session }: Props) {
                 <>
                     <li>
                         <Link href="/admin/profile">
-                        <a className="btn-link">MyProfile</a>
+                            <a className="btn-link">MyProfile({session.user!.email})</a>
                         </Link>
                     </li>
                     <li>
@@ -32,11 +32,11 @@ export function Menu({ session }: Props) {
                 </>
             ) : (
                 <>
-                    <li>
+                    {/*<li>
                         <Link href="/admin/signin">
                             <a className="btn-link">SignIn</a>
                         </Link>
-                    </li>
+                    </li>*/}
                 </>
             )}
             <li><Theme /></li>

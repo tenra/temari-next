@@ -129,6 +129,18 @@ export interface definitions {
     /** Format: text */
     website?: string;
     };
+    clients: {
+    /**
+     * Format: uuid
+     * @description Note:
+     * This is a Primary Key.<pk/>
+     */
+    id: string;
+    /** Format: timestamp with time zone */
+    updated_at?: string;
+    /** Format: text */
+    name?: string;
+    };
 }
     
 export interface parameters {
