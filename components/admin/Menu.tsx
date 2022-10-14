@@ -2,6 +2,7 @@ import { AuthSession } from '@supabase/supabase-js'
 import Link from 'next/link'
 import Router from 'next/router'
 import { supabase } from '../../libs/supabaseClient'
+import Theme from '../Theme'
 
 export interface Props {
     session: AuthSession | null
@@ -13,8 +14,8 @@ export function Menu({ session }: Props) {
             {session ? (
                 <>
                     <li>
-                        <Link href="/profile">
-                        <a className="btn-link">My profile</a>
+                        <Link href="/admin/profile">
+                        <a className="btn-link">MyProfile</a>
                         </Link>
                     </li>
                     <li>
@@ -25,7 +26,7 @@ export function Menu({ session }: Props) {
                                 Router.push('/admin')
                             }}
                         >
-                            Sign out
+                            SignOut
                         </button>
                     </li>
                 </>
@@ -33,11 +34,12 @@ export function Menu({ session }: Props) {
                 <>
                     <li>
                         <Link href="/admin/signin">
-                            <a className="btn-link">Sign in</a>
+                            <a className="btn-link">SignIn</a>
                         </Link>
                     </li>
                 </>
             )}
+            <li><Theme /></li>
         </ul>
     )
 }

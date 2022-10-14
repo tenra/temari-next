@@ -25,7 +25,7 @@ export function Layout({ session, children }: PropsWithChildren<Props>) {
           <Menu session={session} />
         </header>
         <main className="flex-1 p-4">{children}</main>
-        <footer className="bg-sky-700 text-white p-4">
+        <footer className="bg-sky-800 text-white p-4">
           Powered by Next.js &amp; Supabase
         </footer>
       </div>
