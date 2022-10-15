@@ -52,9 +52,9 @@ export function ProfileForm({ session }: Props) {
             throw error
         }
         } catch (error: any) {
-        alert(error.message)
+            alert(error.message)
         } finally {
-        setUpdating(false)
+            setUpdating(false)
         }
     }
 

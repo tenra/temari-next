@@ -26,7 +26,18 @@ export function Layout({ session, children }: PropsWithChildren<Props>) {
         </header>
         <main className="flex-1 p-4">{children}</main>
         <footer className="bg-sky-900 text-white p-4">
-          Powered by Next.js &amp; Supabase
+          <ul className="flex">
+            <li className="hover:underline underline-offset-8 px-4">
+              <Link href="/">
+                <a>temari_top</a>
+              </Link>
+            </li>
+            <li className="hover:underline underline-offset-8 px-4">
+              <Link href="/admin">
+                <a>admin_top</a>
+              </Link>
+            </li>
+          </ul>
         </footer>
       </div>
     </>

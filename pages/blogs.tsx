@@ -33,7 +33,7 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
         <span className="absolute -bottom-1 -z-10 w-full h-3 bg-yellow-300 opacity-80" style={{borderRadius: '50%'}}></span>
         お知らせ
       </h1>
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto" style={{minHeight: "70vh"}}>
         <ul>
           {blogs.map((blog) => (
             <li key={blog.id} className="list-none py-4">

@@ -5,6 +5,8 @@ import { supabase } from '../libs/supabaseClient'
 
 export const useClient = () => {
     const [clients, setClients] = useState([]);
+    const [loading, setLoading] = useState(false)
+    const [error, setError] = useState<any | null>(null)
 
     useEffect(() => {
         fetchClients()
@@ -15,5 +17,5 @@ export const useClient = () => {
         setClients(datas.body)
     }
 
-    return {clients, fetchClients };
+    return {loading, error, clients, fetchClients };
 }

@@ -89,6 +89,11 @@ export const Footer: React.FC = () => {
               <a>プライバシーポリシー</a>
             </Link>
           </li>
+          <li className="hover:underline underline-offset-8 px-4">
+            <Link href="/admin">
+              <a>管理者ページ</a>
+            </Link>
+          </li>
         </ul>
         <div className="text-center pt-10">
           <CopyLight />
