@@ -12,6 +12,7 @@
     "@formspree/cli": "^0.9.6",
     "@formspree/react": "^2.3.3",
     "@headlessui/react": "^1.7.3",
+    "@splidejs/react-splide": "^0.7.12",
     "@supabase/supabase-auth-helpers": "^1.4.2",
     "@supabase/supabase-js": "^1.35.6",
     "@tailwindcss/line-clamp": "^0.4.2",
@@ -29,9 +30,9 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.37.0",
     "react-scroll": "^1.8.7",
-    "sass": "^1.54.8",
+    "sass": "^1.55.0",
     "scroll-behavior-polyfill": "^2.0.13",
-    "swiper": "^8.3.2"
+    "styled-jsx": "^5.1.0"
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",

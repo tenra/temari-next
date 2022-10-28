@@ -46,7 +46,7 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
                           alt="blogs image"
                           layout="fill"
                           objectFit="contain"
-                          objectPosition={"50% 50%;"}
+                          objectPosition={"50% 50%"}
                         />
                     </div>
                     <div className="">

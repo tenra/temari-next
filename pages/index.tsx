@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 import Layout from '../components/Layout'
-import Slider from '../components/Slider'
+//import Slider from '../components/Slider'
+import { SplideSlider } from '../components/Splide'
 import { client } from "../libs/client";
 import type { Blog } from "../types/blog"
 import Date from '../components/Date'
@@ -43,7 +44,7 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
           </span>
         </h1>
         <div style={{ margin: '0 calc(50% - 50vw)', width: '100vw' }}>
-          <Slider />
+          <SplideSlider />
         </div>
 
         <div className="text-center py-20 leading-9" data-aos="fade-up" data-aos-delay="0" data-aos-duration="2500" data-aos-easing="ease" data-aos-once="true">
@@ -107,7 +108,7 @@ const Home: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
                               alt="blogs image"
                               layout="fill"
                               objectFit="contain"
-                              objectPosition={"50% 50%;"}
+                              objectPosition={"50% 50%"}
                             />
                         </div>
                         <div className="">

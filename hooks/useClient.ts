@@ -13,7 +13,7 @@ export const useClient = () => {
     }, [])
 
     const fetchClients = async () => {
-        const datas : any = await supabase.from('clients').select('*');
+        const datas : any = await supabase.from('clients').select('*').order('id');
         setClients(datas.body)
     }
 
