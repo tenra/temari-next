@@ -34,3 +34,11 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+.supabase/
+
+# Supabase CLI のローカルキャッシュ（link 先・バージョン情報）
+supabase/.temp/
+
+.cursor/
+#.docs/
